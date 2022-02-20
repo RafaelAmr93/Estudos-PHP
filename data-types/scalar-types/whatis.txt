@@ -1,0 +1,10 @@
+What is scalar type declaration in PHP 7? Scalar type declaration means the statement to a function to accept
+arguments (parameters) or return values only of the given scalar data type (int, float, string or bool).
+
+To specify a scalar type declaration, the name of the scalar data type should be added before the parameter name.
+
+ function FunctionName (int $a, int $b){ return $a + $b; }
+
+In the above example, before calling this function, the PHP 7 interpreter will check if $a or $b variables are
+integers. If they are not, then the PHP 7 interpreter generates a special PHP 7 TypeError exception.
+
